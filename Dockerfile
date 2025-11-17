@@ -23,4 +23,7 @@ ENV NEO4J_MCP_SERVER_ALLOWED_HOSTS="*"
 EXPOSE 8000
 
 # Run the server
-CMD ["mcp-neo4j-memory"]
+# CMD ["mcp-neo4j-memory"]
+CMD ["mcp-neo4j-cypher:latest"]
+
+
