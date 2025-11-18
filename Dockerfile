@@ -6,7 +6,7 @@ WORKDIR /app
 RUN pip install uv
 
 # Install mcp-neo4j-memory using uv
-RUN uv pip install --system mcp-neo4j-memory==0.4.1
+RUN uv pip install --system mcp-neo4j-cypher
 
 # Environment variables
 ENV NEO4J_URL="neo4j+s://dd1fa6a6.databases.neo4j.io"
