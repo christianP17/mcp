@@ -7,8 +7,8 @@ RUN pip install uv
 # Install mcp-neo4j-cypher using uv
 RUN uv pip install --system mcp-neo4j-cypher
 
-# Environment variables
-ENV NEO4J_URL="neo4j+s://d13785de.databases.neo4j.io:7687"
+# Environment variables - using correct variable names from documentation
+ENV NEO4J_URI="neo4j+s://d13785de.databases.neo4j.io"
 ENV NEO4J_USERNAME="neo4j"
 ENV NEO4J_PASSWORD="kGjTlS0cWvJjAJkEU5982E04wfkGIWCNMJDcYG224PE"
 ENV NEO4J_DATABASE="neo4j"
